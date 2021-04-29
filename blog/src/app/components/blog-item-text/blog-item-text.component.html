@@ -1,8 +1,9 @@
 <p>
-  {{ text }}
+  {{ text  | summary:35 }}
 </p>
-<a [routerLink]="['/blog/detail/1']">
-  Więcej
-</a>
-{{ text  | summary:35 }}
+<div class="text-center">
+  <a [routerLink]="['/blog/detail/', id]" class="btn btn-primary w-50">Więcej</a>
+</div>
+
+
 
